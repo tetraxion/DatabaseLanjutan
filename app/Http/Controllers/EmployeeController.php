@@ -118,7 +118,6 @@ class EmployeeController extends Controller
         $employee->position_id = $request->position;
         $employee->save();
 
-
         return redirect()->route('employees.index');
     }
 
@@ -150,7 +149,6 @@ class EmployeeController extends Controller
 
         // ELOQUENT
         $employee = Employee::find($id);
-
 
         return view('employee.show', compact('pageTitle', 'employee'));
     }
@@ -241,7 +239,6 @@ class EmployeeController extends Controller
         //     ->delete();
           // ELOQUENT
         Employee::find($id)->delete();
-
 
         return redirect()->route('employees.index');
     }
