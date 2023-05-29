@@ -16,7 +16,7 @@ class EmployeeController extends Controller
      */
     public function index()
     {
-        // Lutfi
+
 
         // RAW SQL QUERY
         // $employees = DB::select('
@@ -29,6 +29,7 @@ class EmployeeController extends Controller
         //     'pageTitle' => $pageTitle,
         //     'employees' => $employees
         // ]);
+        // Lutfi
 
         $pageTitle = 'Employee List';
 
@@ -147,6 +148,7 @@ class EmployeeController extends Controller
         //     ->where('employees.id', '=', $id)
         //     ->first();
 
+        // Lutfi
         // ELOQUENT
         $employee = Employee::find($id);
 
